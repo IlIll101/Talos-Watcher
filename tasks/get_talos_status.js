@@ -50,6 +50,7 @@ module.exports = {
 				};
 
 				try {
+					console.log('Task Complete')
 					const data = JSON.stringify(save_data, null, 4);
 					fs.writeFileSync('./Information/talos_responses.json', data, 'utf8');
 				} 
