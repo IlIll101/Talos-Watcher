@@ -1,7 +1,7 @@
 const fetch = require("node-fetch");
 const fs = require('fs');
 module.exports = {
-	data: {"name": "get_talos_status", "interval": 30000},
+	data: {"name": "get_talos_status", "interval": 60000},
 	
 	async execute(client) {
 
@@ -50,7 +50,6 @@ module.exports = {
 				};
 
 				try {
-					console.log('Task Complete')
 					const data = JSON.stringify(save_data, null, 4);
 					fs.writeFileSync('./Information/talos_responses.json', data, 'utf8');
 				} 
@@ -60,7 +59,7 @@ module.exports = {
 				}
 				
 			  }
-			, 30000)
+			, 60000)
 	
 		}
 		container_function()
