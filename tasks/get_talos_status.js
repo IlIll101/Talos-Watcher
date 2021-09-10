@@ -52,7 +52,6 @@ module.exports = {
 				try {
 					const data = JSON.stringify(save_data, null, 4);
 					fs.writeFileSync('./Information/talos_responses.json', data, 'utf8');
-					console.log('Saved File!')
 				} 
 
 				catch (err) {
