@@ -4,7 +4,7 @@ const clientId = process.env.clientID
 const token = process.env.token
 const { SlashCommandBuilder } = require('@discordjs/builders');
 
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.DIRECT_MESSAGES] });
 
 client.commands = new Collection();
 client.tasks = new Collection();
