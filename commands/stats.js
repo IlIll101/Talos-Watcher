@@ -22,7 +22,7 @@ module.exports = {
 			.setTitle(`Stats for ${data.url} `)
 			.addFields(
 				{ name: 'Average ping', value: data.average_ping.toString(), inline: false },
-				{ name: 'Sucsessful response rate', value: (data.response_quality*100).toString() + '% ' + icon, inline: false},
+				{ name: 'Succsessful response rate', value: (data.response_quality*100).toString() + '% ' + icon, inline: false},
 				{ name: 'Ping tests (ms)', value: data.response_times.toString(), inline: false },
 				{ name: 'Response tests', value: data.response_types.toString(), inline: false },
 			)	
