@@ -1,0 +1,30 @@
+{
+    "url": "https://talos.stuy.edu/",
+    "average_ping": 169.1,
+    "response_quality": 1,
+    "response_types": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+    ],
+    "response_times": [
+        231,
+        158,
+        147,
+        171,
+        160,
+        166,
+        150,
+        158,
+        181,
+        169
+    ],
+    "time_of_check": 1631301273868
+}
