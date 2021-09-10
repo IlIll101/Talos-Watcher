@@ -1,7 +1,7 @@
 const fetch = require("node-fetch");
 const fs = require('fs');
 module.exports = {
-	data: {"name": "get_talos_status", "interval": 300000},
+	data: {"name": "get_talos_status", "interval": 30000},
 	
 	async execute(client) {
 
@@ -59,7 +59,7 @@ module.exports = {
 				}
 				
 			  }
-			, 300000)
+			, 30000)
 	
 		}
 		container_function()
