@@ -31,7 +31,7 @@ module.exports = {
         .setTitle(`Stats about: ${client.user.tag}`)
         .addFields(
          
-            { name: 'Memory usage', value: `${Math.round(os.totalmem() - os.freemem()/10000)}/${Math.round(os.totalmem()/10000)} mbs in use`, inline: false },
+            { name: 'Memory usage', value: `${Math.round(((os.totalmem() - os.freemem())/1000000)*100)}/${Math.round((os.totalmem()/1000000)*100)} mbs in use`, inline: false },
         )
 
         await interaction.reply({ embeds: [embed]});
