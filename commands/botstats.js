@@ -9,6 +9,7 @@ module.exports = {
     
     async execute(interaction, client) {
         function mil_to_HM (t) {
+	//was in a rush, so I "borrowed" this from stack overflow :p  https://stackoverflow.com/questions/8528382/javascript-show-milliseconds-as-dayshoursmins-without-seconds
             var cd = 24 * 60 * 60 * 1000,
             ch = 60 * 60 * 1000,
             d = Math.floor(t / cd),
@@ -31,6 +32,7 @@ module.exports = {
         .setTitle(`Stats about: ${client.user.tag}`)
         .addFields(
 	    { name: 'Uptime', value: mil_to_HM(client.uptime).toString(), inline: false },
+	    { name: 'Bot ping', valie: `${client.ws.ping} ms`, inline: false },     
             { name: 'Servers present', value: client.guilds.cache.size.toString(), inline: false },
             
         )
