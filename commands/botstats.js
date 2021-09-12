@@ -23,7 +23,7 @@ module.exports = {
                 d++;
                 h = 0;
             }
-            return [d, pad(h), pad(m)].join(':');
+            return `Hours: ${pad(h)} Mins: ${pad(m)}`;
         }
 
         const embed = new MessageEmbed()
