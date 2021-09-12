@@ -9,7 +9,7 @@ module.exports = {
     
     async execute(interaction, client) {
         function mil_to_HM (timeInt) {
-            let time = round((timeInt/3600000)*100).toString();
+            let time = Math.round((timeInt/3600000)*100).toString();
             if (time.lenght > 3) {
                 return (`${time[0] + time[1]} Hours, ${time[2] + time[3]} Minutes`);
             }
@@ -24,7 +24,7 @@ module.exports = {
             { name: 'Uptime', value: mil_to_HM(client.uptime), inline: false },
             { name: 'Servers present', value: client.guilds.size.toString(), inline: false },
             { name: 'Bot ping', valie: `${client.ws.ping} ms`, inline: false },
-            { name: 'Memory usage', value: `${round(os.totalmem() - os.freemem()/10000)}/${round(os.totalmem()/10000)} mbs in use`, inline: false },
+            { name: 'Memory usage', value: `${Math.round(os.totalmem() - os.freemem()/10000)}/${Math.round(os.totalmem()/10000)} mbs in use`, inline: false },
         )
 
         await interaction.reply({ embeds: [embed]});
