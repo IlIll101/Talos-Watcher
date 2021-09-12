@@ -32,7 +32,7 @@ module.exports = {
         .setTitle(`Stats about: ${client.user.tag}`)
         .addFields(
 	    { name: 'Uptime', value: mil_to_HM(client.uptime).toString(), inline: false },
-	    { name: 'Bot ping', valie: `${client.ws.ping} ms`, inline: false },     
+	    { name: 'Bot ping', value: `${client.ws.ping} ms`, inline: false },     
             { name: 'Servers present', value: client.guilds.cache.size.toString(), inline: false },
             
         )
