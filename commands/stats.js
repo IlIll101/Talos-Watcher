@@ -8,7 +8,7 @@ module.exports = {
 		.setName('stats')
 		.setDescription('displays information about talos'),
 
-	async execute(interaction) {
+	async execute(interaction, client) {
 		async function create_embed(data) {
 			var icon;
 			if (data.response_quality > 0.8) {icon = "<:5Bars:885935059897548911>"};
