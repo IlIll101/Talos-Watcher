@@ -8,6 +8,7 @@ The bot pings Talos 10 times every 1 mins and evaluates the responses to those 1
 
 This project is open to improvement (I have limited JS experience)
 
-The bot is currently hosted on a Heroku Free tier worker
+The bot is currently hosted on a aws ec2 server
+
 
 Invite link: https://discordbotlist.com/bots/taloswatcher
